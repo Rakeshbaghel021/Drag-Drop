@@ -3,7 +3,7 @@ import React from "react";
 import { Input } from "antd";
 const SideBar = ({ setFormula, disableFormulaInput }) => {
   return (
-    <>
+    <div className="side">
       <div className="sidebar">
         <div className="side-wrapper">
           <h1>User Controls</h1>
@@ -71,7 +71,7 @@ const SideBar = ({ setFormula, disableFormulaInput }) => {
         <p>Powered by</p>
         <img src="http://123.253.12.155:8088/rpac-app/img/logo.svg" alt="" />
       </div>
-    </>
+    </div>
   );
 };
 

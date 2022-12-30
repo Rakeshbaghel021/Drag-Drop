@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LeftCircleOutlined, UploadOutlined } from "@ant-design/icons";
 import { InboxOutlined } from "@ant-design/icons";
-import { Button, Table, Upload } from "antd";
+import { Button, Table, Upload, Alert } from "antd";
 import Papa from "papaparse";
 const { Dragger } = Upload;
 
@@ -139,7 +139,15 @@ const HomePage = ({ formula, setDisableFormulaInput }) => {
         </div>
 
         {formula && !formulaError && (
-          <p style={{ color: "red" }}>Please enter valid formula format.</p>
+          <Alert
+            style={{
+              margin: "1rem",
+              color: "red",
+            }}
+            message="Please enter valid formula format."
+            type="error"
+            showIcon
+          />
         )}
 
         <div className="table-wrapper">
