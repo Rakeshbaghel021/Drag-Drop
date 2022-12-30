@@ -95,7 +95,7 @@
   font-size: 12px;
   overflow: auto;
   color: aliceblue;
-  background-image: url("http://123.253.12.155:8088/rpac-app/img/sidebg.png");
+  background-image: url("http://123.253.12.155:8088/rpac-app/img/sidebg.png") !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .side-wrapper > h1 {
