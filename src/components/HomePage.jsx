@@ -145,7 +145,13 @@ const HomePage = ({ formula, setDisableFormulaInput }) => {
         <div className="table-wrapper">
           {!!csvData.length && (
             <>
-              <h4>Original CSV</h4>
+              <h4
+                style={{
+                  marginBottom: "1rem",
+                }}
+              >
+                Original CSV
+              </h4>
               <Table
                 scroll={{ x: true }}
                 dataSource={csvData}
@@ -156,7 +162,13 @@ const HomePage = ({ formula, setDisableFormulaInput }) => {
 
           {formulaError && (
             <>
-              <h4>Formula Applied Table</h4>
+              <h4
+                style={{
+                  marginBottom: "1rem",
+                }}
+              >
+                Formula Applied Table
+              </h4>
               <Table
                 scroll={{ x: true }}
                 dataSource={newTableDataSource}
